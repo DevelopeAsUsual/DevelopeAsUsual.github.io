@@ -33665,18 +33665,22 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 101px;
+  min-height: 63px;
 }
 
 .u-header .u-image-1 {
-  margin: 22px auto 22px 0;
+  margin: 10px auto 10px -42px;
 }
 
 .u-header .u-logo-image-1 {
-  max-width: 64px;
-  max-height: 64px;
+  max-width: 49px;
+  max-height: 49px;
 }
-
+@media (max-width: 1199px) {
+  .u-header .u-image-1 {
+    margin-left: -42px;
+  }
+}
 
 
 
