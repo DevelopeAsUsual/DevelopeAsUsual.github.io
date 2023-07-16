@@ -1,0 +1,90 @@
+2007-8 relegation
+2008-9 league one winners
+2012-13 lost to watford in final
+2013-14 championship winners
+2014-15 safe from relegation
+2015-16 start of journey
+
+
+
+Interceptions:
+1. Leicester				21.6
+2. Aston Villa				20.2	
+3. Watford					20.2	
+4. Arsenal					19.4	
+5. West Bromwich Albion		19.0	
+6. Southampton				18.6	
+7. Crystal Palace			18.4
+8. Swansea					17.9	
+9. West Ham					17.5	
+10. Tottenham				17.0	
+11. Newcastle				16.9	
+12. Bournemouth				16.8	
+13. Manchester City			16.6	
+14. Manchester United		15.6	
+15. Stoke					15.2	
+16. Sunderland				14.9	
+17. Liverpool				14.5	
+18. Chelsea					13.6	
+19. Everton					13.4	
+20. Norwich					12.4
+
+Tackles:
+1. Liverpool				22.9
+2. Leicester				22.9
+3. Tottenham				21.1
+4. Watford					20.9
+5. Newcastle				20.8
+6. Chelsea					20.8
+7. Sunderland				20.2
+8. Manchester United		20.0
+9. Aston Villa				19.2
+10. Everton					19.2
+11. Manchester City			19.2
+12. Southampton				18.8
+13. West Ham				18.7
+14. Stoke					18.7
+15. Bournemouth				18.6
+16. Arsenal					18.6
+17. Crystal Palace			17.1
+18. West Bromwich Albion	16.9
+19. Swansea					16.8
+20. Norwich					16.0
+
+counter attack:
+1	Leicester				5
+2	Manchester City			5
+3	Newcastle				4
+4	Swansea					3
+5	Everton					3
+6	Southampton				3
+7	Arsenal					3
+8	Tottenham				2
+9	West Ham				2
+10	Sunderland				2
+11	Manchester United		2
+12	Chelsea					1
+13	Liverpool				1
+14	Aston Villa				1
+
+goals/shot:
+Leicester				0.130268199
+West Ham				0.120071685
+Everton					0.118126273
+Manchester City			0.117073171
+Arsenal					0.115384615
+Newcastle				0.110831234
+Chelsea					0.11026616
+Southampton				0.10982659
+Sunderland				0.109339408
+Manchester United		0.109302326
+Tottenham				0.107902736
+Liverpool				0.100158983
+Stoke					0.098086124
+Swansea					0.097505669
+Bournemouth				0.096982759
+Norwich					0.093301435
+Watford					0.089686099
+Crystal Palace			0.085287846
+West Bromwich Albion	0.082262211
+Aston Villa				0.071052632
