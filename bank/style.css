@@ -1,0 +1,357 @@
+:root {
+    --ColorA: #ec8a6f;
+    --ColorB: #12538d;
+    --ColorC: #60D2B6;
+    --ColorD: #aaaaaa;
+    --ColorE: #FFCE5C;
+    --ColorH: #1F363D;
+    --ColorW: #ffffff;
+    --ColorG: #eeeeee;
+    --ColorF: #666666;
+    
+}
+
+
+body {
+    background-color: var(--ColorG); /* Use the gray color of your choice */
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+
+nav {
+    background-color: var(--ColorW);
+    color: var(--ColorH);
+    border-bottom: 2px solid var(--ColorH);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    z-index: 1;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+}
+nav a {
+    color: var(--ColorH);
+    text-decoration: none;
+}
+nav a:hover {
+    border-bottom: 2px solid var(--ColorH);
+}
+.title {
+    color: var(--ColorH);
+}
+
+
+.about {
+    text-align: justify;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    color: var(--ColorH);
+}
+.about-head {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5%;
+}
+.about-body {
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+.goal {
+    background-color: var(--ColorW);
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+}
+.goaldetail {
+    padding: 2%;
+    color: var(--ColorH);
+    flex: 1;
+}
+.goaldetail-head {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5%;
+    border-bottom: 2px solid var(--ColorH);
+}
+.goaldetail-body {
+    border-radius: 5px;
+    margin-left: 5%;
+}
+
+
+
+hr {
+    border: 1px solid var(--ColorH); /* Color for the line */
+    margin-top: 1%;
+}
+
+
+
+.dashboard {
+    background-color: var(--ColorW);
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+
+
+.card1 {
+    background-color: var(--ColorW);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: var(--ColorA); /* Use the declared color for text */
+    height: 100%;
+}
+.card1-heading {
+    font-size: 20px;
+    color: var(--ColorD);
+    height: 30%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1-bodyD{
+    font-size: 10px;
+    color: #333;
+    height: 70%;
+    display: flex;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-bottom: 4px solid var(--ColorC);
+}
+.card1-bodyU{
+    font-size: 10px;
+    color: #333;
+    height: 70%;
+    display: flex;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-bottom: 4px solid var(--ColorE);
+}
+.card1-bodyleft{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    padding-top: 0%;
+    padding-left: 10%;
+}
+.card1-bodylefttop{
+    flex: 4;
+    display: flex;
+}
+.card1-bodylefttopleft{
+    flex: 1;
+    font-size: 20px;
+    text-align: right;
+    display: flex;
+    color: var(--ColorD);
+    justify-content: right;
+    align-items: center;
+}
+.card1-bodylefttopright{
+    flex: 7;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    color: var(--ColorH);
+    text-align: left;
+    align-items: center;
+
+    
+}
+.card1-bodyleftbottom{
+    flex: 1;
+    display: flex;
+    font-size: 20px;
+    color: var(--ColorD);
+    align-items: center;
+    justify-content: left;
+}
+.card1-bodyright{
+    flex: 1;
+    color: #27ae60; /* Example icon color */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 7%;
+    margin-bottom: 7%;
+    background-image: var(--img-url);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 60%;
+    max-width: 18%;
+}
+.material-symbols-outlined {
+  font-size: 80px;
+}
+
+
+.card2{
+    background-color: var(--ColorW);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: var(--ColorA); /* Use the declared color for text */
+    height: 100%;
+}
+.card2-heading {
+    font-size: 20px;
+    color: var(--ColorH);
+    height: 30%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card2-body{
+    font-size: 10px;
+    color: #333;
+    height: 70%;
+    display: flex;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-bottom: 4px solid var(--ColorA);
+}
+
+
+.card3{
+    background-color: var(--ColorW);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: var(--ColorH);
+    height: 100%;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid var(--ColorA);
+}
+
+
+.card4{
+    background-color: var(--ColorW);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: var(--ColorA); /* Use the declared color for text */
+    height: 100%;
+}
+.card4-heading {
+    font-size: 20px;
+    color: var(--ColorH);
+    height: 10%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card4-bodyU{
+    font-size: 10px;
+    color: #333;
+    border-radius: 5px;
+    height: 90%;
+    border-bottom: 4px solid var(--ColorE);
+}
+.card4-bodyD{
+    font-size: 10px;
+    color: #333;
+    border-radius: 5px;
+    height: 90%;
+    border-bottom: 4px solid var(--ColorC);
+}
+
+
+
+
+.card5{
+    background-color: var(--ColorW);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: var(--ColorA); /* Use the declared color for text */
+    height: 100%;
+}
+.card5-heading {
+    font-size: 20px;
+    color: var(--ColorH);
+    height: 10%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card5-body{
+    font-size: 10px;
+    color: #333;
+    height: 90%;
+    display: flex;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 1%;
+    border-bottom: 4px solid var(--ColorA);
+}
+
+
+
+
+
+
+
+
+#item5 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#item9 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+
+#bottom {
+    background-color: var(--ColorH);
+    flex-direction: column;
+    border-radius: 0px;
+    color: var(--ColorW);
+    font-size: 20px;
+}
+
+.social{
+    color: var(--ColorW);
+    text-decoration: none;
+}
+.social:hover {
+    border-bottom: 2px solid var(--ColorW);
+}
