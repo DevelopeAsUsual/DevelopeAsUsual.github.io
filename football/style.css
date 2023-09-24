@@ -16,7 +16,7 @@ header {
   height: 4vh;
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border-radius: 0px 0px 20px 20px;
   z-index: 1;
@@ -24,10 +24,19 @@ header {
               -5px -5px 50px #222222;
 }
 
+a {
+    color: var(--ColorH);
+    text-decoration: none;
+}
+
 h1 {
   margin: 0;
   font-weight: bold;
   font-size: larger;
+}
+
+h2 {
+  text-align: left;
 }
 
 .first-section {
