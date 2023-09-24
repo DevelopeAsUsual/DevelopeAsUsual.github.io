@@ -381,6 +381,12 @@ h1 {
   z-index: -1;
 }
 
+.s3pachart00 {
+  opacity: 0%;
+  width: 0%; 
+  height: 0%;
+  padding: 0px;
+}
 .s3pachart {
   width: 90%; 
   height: 100%;
@@ -392,6 +398,7 @@ h1 {
   justify-content: center;
   align-items: center; /* Yellow color */
 }
+
 
 .s3button {
   display: flex;
@@ -618,7 +625,7 @@ h1 {
 
 .s5 {
   width: 100%;
-  height: calc(185vh); /* Adjust for the header height */
+  height: calc(100vh); /* Adjust for the header height */
   background-color: RGB(0, 33, 115);
   color: rgb(224, 224, 224);
 }
@@ -652,12 +659,15 @@ h1 {
   margin-top: 5vh;
   margin-bottom: 5vh;
   margin-left: 5%;
-  height: 40%;
+  height: 80%;
   width: 90%;
   color: rgb(224, 224, 224);
   background-color: RGB(0, 33, 115);
   z-index: 0;
   flex-direction: column;
+}
+.s5container2 {
+  height: 4%;
 }
 
 .s5chart-desc {

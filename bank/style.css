@@ -231,7 +231,7 @@ hr {
     align-items: center;
 }
 .card2-body{
-    font-size: 10px;
+    font-size: 15px;
     color: #333;
     height: 70%;
     display: flex;
@@ -340,7 +340,7 @@ hr {
 
 
 
-#bottom {
+#contact {
     background-color: var(--ColorH);
     flex-direction: column;
     border-radius: 0px;

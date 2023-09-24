@@ -241,12 +241,36 @@ document.addEventListener("DOMContentLoaded", function() {
   const year = [23, 22, 21, 20, 19, 18, 17, 16, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 15];
   const gf = [89, 93, 86, 99, 98, 100, 93, 87, 86, 89, 89, 80, 86, 90, 87, 89, 91, 95, 90, 83, 87, 90, 91, 81];
   const gd = [61, 73, 51, 52, 72, 79, 52, 41, 65, 43, 64, 41, 71, 44, 58, 56, 50, 57, 47, 40, 43, 48, 52, 32];
+  const gteam = ["Manchester United 1992-1993",
+"Manchester United 1993-1994",
+"Blackburn Rovers 1994-1995",
+"Manchester United 1995-1996",
+"Manchester United 1996-1997",
+"Arsenal 1997-1998",
+"Manchester United 1998-1999",
+"Manchester United 1999-2000",
+"Manchester United 2000-2001",
+"Arsenal 2001-2002",
+"Manchester United 2002-2003",
+"Arsenal 2003-2004",
+"Chelsea 2004-2005",
+"Chelsea 2005-2006",
+"Manchester United 2006-2007",
+"Manchester United 2007-2008",
+"Manchester United 2008-2009",
+"Chelsea 2009-2010",
+"Manchester United 2010-2011",
+"Manchester City 2011-2012",
+"Manchester United 2012-2013",
+"Manchester City 2013-2014",
+"Chelsea 2014-2015",
+"Leicester City 2015-2016"];
   var dataPoints4 = [];
   for (let i = 0; i < year.length; i++) {
     const dataPoint = {
       x: gd[i],
       y: gf[i],
-      label: `Data Point ${i + 1}`,
+      label: gteam[i],
     };
     dataPoints4.push(dataPoint);
   }
@@ -750,11 +774,7 @@ document.addEventListener("DOMContentLoaded", function() {
     },
   };
 
-  var chart0 = new Chart(chartCanvas0, {
-    type: "line",
-    data: chartData0,
-    options: chartOptions1
-  });
+
 
   var chart1 = new Chart(chartCanvas1, {
     type: "bar",
@@ -780,11 +800,6 @@ document.addEventListener("DOMContentLoaded", function() {
     options: chartOptions4,
   });
 
-  var chart5 = new Chart(chartCanvas5, {
-    type: 'scatter',
-    data: chartData5,
-    options: chartOptions4,
-  });
 
   var dataPoints = [
     [19, 8, 10, 6, 4, 5, 4, 2, 2, 2, 2, 2, 4, 4, 2, 2, 2, 2, 1, 1, 1,
@@ -909,7 +924,6 @@ document.addEventListener("DOMContentLoaded", function() {
     chart2.update();
     chart3.update();
     chart4.update();
-    chart5.update();
   });
 
   const circle1 = document.getElementById('circle1');

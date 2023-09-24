@@ -27,22 +27,22 @@ const data5 = {
     datasets: [
         {
             label: 'Paid-off Loans',
-            data: [10,11], // Data values for Series 1
+            data: [0.005164,0.0048255], // Data values for Series 1
             backgroundColor: ColorC, // Color for Series 1
         },
         {
             label: 'Open Partial Paid Loans',
-            data: [80,78], // Data values for Series 2
+            data: [94.584874,94.632039], // Data values for Series 2
             backgroundColor: ColorE, // Color for Series 2
         },
         {
             label: 'Open Unpaid Loans',
-            data: [5,6], // Data values for Series 3
+            data: [4.1080583,4.072037], // Data values for Series 3
             backgroundColor: ColorD, // Color for Series 3
         },
         {
             label: 'Charge-off Loans',
-            data: [5,5], // Data values for Series 3
+            data: [1.301902,1.291097], // Data values for Series 3
             backgroundColor: ColorA, // Color for Series 3
         },
     ],
@@ -93,20 +93,20 @@ const item5 = new Chart(ctx5, {
 const data8 = {
     datasets: [
         {
-            data: [15, 15, 30, 40, 12, 13, 15, 15, 30, 40, 12, 13, 15, 15, 30, 40, 12, 13, 15, 15, 30, 40, 12, 13, 15, 15, 30, 40, 12, 13, 15, 15, 30, 40, 12, 13, 15, 15, 30, 40, 12, 13], // Data values for Series 2 // Colors for Series 2
-            backgroundColor: [ColorC, ColorC, ColorC, ColorC, ColorC, ColorC,
-             ColorI, ColorI, ColorI, ColorI, ColorI, ColorI, 
-             ColorJ, ColorJ, ColorJ, ColorJ, ColorJ, ColorJ, 
-             ColorE, ColorE, ColorE, ColorE, ColorE, ColorE, 
-             ColorK, ColorK, ColorK, ColorK, ColorK, ColorK, 
+            data: [7400, 5773, 5396, 7151, 11149, 12376, 12042, 13159, 12806, 12274, 13579, 12886, 12631, 12648, 9444, 8376, 6144, 5542, 5489, 4542, 4372, 4048, 3446, 2748, 2086, 5489], // Data values for Series 2 // Colors for Series 2
+            backgroundColor: [ColorC, ColorC, ColorC, ColorC, ColorC,
+             ColorI, ColorI, ColorI, ColorI, ColorI,
+             ColorJ, ColorJ, ColorJ, ColorJ, ColorJ,
+             ColorE, ColorE, ColorE, ColorE, ColorE,
+             ColorK, ColorK, ColorK, ColorK, ColorK, 
              ColorL, ColorL, ColorL, ColorL, ColorL, ColorL, 
              ColorA, ColorA, ColorA, ColorA, ColorA, ColorA],
-            label: ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'G1', 'G2', 'G3', 'G4', 'G5', 'G6'],
+            label: ['A1', 'A2', 'A3', 'A4', 'A5', 'B1', 'B2', 'B3', 'B4', 'B5', 'C1', 'C2', 'C3', 'C4', 'C5',  'D1', 'D2', 'D3', 'D4', 'D5', 'E1', 'E2', 'E3', 'E4', 'E5', 'F-G'],
         },
         {
-            data: [30, 45, 25, 30, 45, 25, 22], // Data values for Series 1
+            data: [36869, 62657, 61188, 30093, 16700, 5489], // Data values for Series 1
             backgroundColor: [ColorC, ColorI, ColorJ, ColorE, ColorK, ColorL, ColorA], // Colors for Series 1
-            label: ['A', 'B', 'C','D', 'E', 'F','G'],
+            label: ['A', 'B', 'C','D', 'E', 'F-G'],
         },
         
     ],
@@ -174,20 +174,20 @@ const item8 = new Chart(ctx8, {
 const data9 = {
     datasets: [
         {
-            data: [15, 15, 30, 40, 12, 13, 15, 15, 30, 40, 12, 13, 15, 15, 30, 40, 12, 13, 15, 15, 30, 40, 12, 13, 15, 15, 30, 40, 12, 13, 15, 15, 30, 40, 12, 13, 15, 15, 30, 40, 12, 13], // Data values for Series 2 // Colors for Series 2
-            backgroundColor: [ColorC, ColorC, ColorC, ColorC, ColorC, ColorC,
-             ColorI, ColorI, ColorI, ColorI, ColorI, ColorI, 
-             ColorJ, ColorJ, ColorJ, ColorJ, ColorJ, ColorJ, 
-             ColorE, ColorE, ColorE, ColorE, ColorE, ColorE, 
-             ColorK, ColorK, ColorK, ColorK, ColorK, ColorK, 
+            data: [108301250, 82836575, 78139000, 108881100, 168992925, 172026725, 165836975, 196803700, 181625075, 165751950, 189638675, 187590525, 193622000, 197722425, 143938625, 129060650, 95359875, 89189175, 94056750, 79308550, 79294550, 75907700, 63310875, 52633900, 40419750, 109612100], // Data values for Series 2 // Colors for Series 2
+            backgroundColor: [ColorC, ColorC, ColorC, ColorC, ColorC,
+             ColorI, ColorI, ColorI, ColorI, ColorI,
+             ColorJ, ColorJ, ColorJ, ColorJ, ColorJ,
+             ColorE, ColorE, ColorE, ColorE, ColorE,
+             ColorK, ColorK, ColorK, ColorK, ColorK, 
              ColorL, ColorL, ColorL, ColorL, ColorL, ColorL, 
              ColorA, ColorA, ColorA, ColorA, ColorA, ColorA],
-            label: ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'G1', 'G2', 'G3', 'G4', 'G5', 'G6'],
+            label: ['A1', 'A2', 'A3', 'A4', 'A5', 'B1', 'B2', 'B3', 'B4', 'B5', 'C1', 'C2', 'C3', 'C4', 'C5',  'D1', 'D2', 'D3', 'D4', 'D5', 'E1', 'E2', 'E3', 'E4', 'E5', 'F-G'],
         },
         {
-            data: [30, 45, 25, 30, 45, 25, 22], // Data values for Series 1
+            data: [547150850, 882044425, 912512250, 486975000, 311566775, 109612100], // Data values for Series 1
             backgroundColor: [ColorC, ColorI, ColorJ, ColorE, ColorK, ColorL, ColorA], // Colors for Series 1
-            label: ['A', 'B', 'C','D', 'E', 'F','G'],
+            label: ['A', 'B', 'C','D', 'E', 'F-G'],
         },
     ],
 };
@@ -300,12 +300,12 @@ const data11 = {
     datasets: [
         {
             label: '# Unit Lonas',
-            data: [10, 22], // Data values for Series 1
+            data: [67.15, 56.50], // Data values for Series 1
             backgroundColor: ColorE, // Color for Series 1
         },
         {
             label: '$ Volume Loans',
-            data: [15, 33], // Data values for Series 2
+            data: [32.85, 43.50], // Data values for Series 2
             backgroundColor: ColorC, // Color for Series 2
         },
     ],
@@ -353,16 +353,16 @@ const item11 = new Chart(ctx11, {
 
 // Data for the horizontal stacked bar graph
 const data12 = {
-    labels: ['<10%', '10%-15%','15%-20%','20%-25%','<=25%'],
+    labels: ['<10%', '10%-15%','15%-20%','20%-25%','>=25%'],
     datasets: [
         {
             label: '# Unit Lonas',
-            data: [34, 40, 20, 6 , 0], // Data values for Series 1
+            data: [34.94, 40.51, 20.95, 2.94, 0.66], // Data values for Series 1
             backgroundColor: ColorE, // Color for Series 1
         },
         {
             label: '$ Volume Loans',
-            data: [33, 39, 23, 4, 1], // Data values for Series 2
+            data: [33.28, 38.78, 23.27, 3.80, 0.87], // Data values for Series 2
             backgroundColor: ColorC, // Color for Series 2
         },
     ],
@@ -419,41 +419,41 @@ const item12 = new Chart(ctx12, {
 
 // Data for the horizontal stacked bar graph
 const data13 = {
-    labels: ['# Total','# Charged-Off'],
+    labels: ['% Unit Total','% Unit Charged-Off'],
     datasets: [
         {
             label: 'Grade A',
-            data: [10,11], // Data values for Series 1
+            data: [0.173,0.033], // Data values for Series 1
             backgroundColor: ColorC, // Color for Series 1
         },
         {
             label: 'Grade B',
-            data: [15,13], // Data values for Series 2
+            data: [0.294, 0.130], // Data values for Series 2
             backgroundColor: ColorI, // Color for Series 2
         },
         {
             label: 'Grade C',
-            data: [5,6], // Data values for Series 3
+            data: [0.287, 0.260], // Data values for Series 3
             backgroundColor: ColorJ, // Color for Series 3
         },
         {
             label: 'Grade D',
-            data: [10,11], // Data values for Series 1
+            data: [0.141, 0.265], // Data values for Series 1
             backgroundColor: ColorE, // Color for Series 1
         },
         {
             label: 'Grade E',
-            data: [15,13], // Data values for Series 2
+            data: [0.078, 0.198], // Data values for Series 2
             backgroundColor: ColorK, // Color for Series 2
         },
         {
             label: 'Grade F',
-            data: [5,6], // Data values for Series 3
+            data: [0.021, 0.089], // Data values for Series 3
             backgroundColor: ColorL, // Color for Series 3
         },
         {
             label: 'Grade G',
-            data: [10,10], // Data values for Series 3
+            data: [0.004, 0.023], // Data values for Series 3
             backgroundColor: ColorA, // Color for Series 3
         },
     ],
@@ -519,11 +519,11 @@ function hexToRgb(hex) {
 
 // Data for the filled line chart
 const data15 = {
-    labels: ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'G1', 'G2', 'G3', 'G4', 'G5', 'G6'],
+    labels: ['A1', 'A2', 'A3', 'A4', 'A5', 'B1', 'B2', 'B3', 'B4', 'B5', 'C1', 'C2', 'C3', 'C4', 'C5', 'D1', 'D2', 'D3', 'D4', 'D5', 'E1', 'E2', 'E3', 'E4', 'E5', 'F1', 'F2', 'F3', 'F4', 'F5', 'G1', 'G2', 'G3', 'G4', 'G5'],
     datasets: [
         {
-            label: '# Unit',
-            data: [10, 25, 18, 35, 30, 45, 10, 27, 18, 35, 10, 25, 10, 25, 18, 35, 30, 45, 10, 27, 18, 35, 10, 25, 10, 25, 18, 35, 30, 45, 10, 27, 18, 35, 10, 25, 10, 27, 18, 35, 10, 25], // Data values for Series 1
+            label: '% Unit Charge-off Rate',
+            data: [0.0135, 0.1559, 0.2224, 0.3776, 0.3677, 0.3959, 0.4152, 0.5244, 0.6559, 0.8962, 1.0457, 1.2029, 0.9659, 1.1939, 1.5989, 1.8147, 2.3438, 2.6344, 3.0607, 2.8181, 2.5618, 2.9150, 4.1497, 3.2751, 4.0748, 4.3282, 4.1927, 5.9119, 7.2934, 8.6694, 5.9375, 8.7649, 7.5581, 5.1546, 8.3333], // Data values for Series 1
             fill: true, // Fill the area under the line
             backgroundColor: `rgba(${hexToRgb(ColorE).r}, ${hexToRgb(ColorE).g}, ${hexToRgb(ColorE).b}, 0.6)`, // Fill color
             borderColor: ColorE, // Line color
@@ -531,8 +531,8 @@ const data15 = {
             cubicInterpolationMode: 'monotone', // Smooth curve
         },
         {
-            label: '$ Dollar',
-            data: [25, 10, 30, 35, 25, 55, 25, 10, 20, 35, 25, 35, 25, 10, 30, 35, 25, 55, 25, 10, 20, 35, 25, 35, 25, 10, 30, 35, 25, 55, 25, 10, 20, 35, 25, 35, 10, 27, 18, 35, 10, 25], // Data values for Series 1
+            label: '% Dollar Charge-off Rate',
+            data: [0.014, 0.120, 0.179, 0.369, 0.305, 0.376, 0.454, 0.495, 0.649, 0.806, 0.935, 1.051, 0.923, 1.035, 1.375, 1.753, 2.231, 2.347, 2.561, 2.613, 2.375, 2.528, 3.726, 3.317, 4.031, 4.389, 4.640, 6.229, 8.522, 9.729, 7.024, 12.642, 7.434, 5.563, 9.852], // Data values for Series 1
             fill: true, // Fill the area under the line
             backgroundColor: `rgba(${hexToRgb(ColorC).r}, ${hexToRgb(ColorC).g}, ${hexToRgb(ColorC).b}, 0.6)`, // Fill color
             borderColor: ColorC, // Line color
@@ -589,13 +589,13 @@ const data17 = {
     labels: ['36 Months', '60 Months'],
     datasets: [
         {
-            label: '# Unit Lonas',
-            data: [10, 22], // Data values for Series 1
+            label: '% Unit Charge-Off Rate',
+            data: [1.14, 1.64], // Data values for Series 1
             backgroundColor: ColorE, // Color for Series 1
         },
         {
-            label: '$ Volume Loans',
-            data: [15, 33], // Data values for Series 2
+            label: '% Dollar Charge-Off Rate',
+            data: [1.06, 1.59], // Data values for Series 2
             backgroundColor: ColorC, // Color for Series 2
         },
     ],
@@ -636,16 +636,16 @@ const item17 = new Chart(ctx17, {
 
 // Data for the horizontal stacked bar graph
 const data18 = {
-    labels: ['36 Months', '60 Months'],
+    labels: ['Fractional', 'Whole'],
     datasets: [
         {
-            label: '# Unit Lonas',
-            data: [10, 22], // Data values for Series 1
+            label: '% Unit Charge-Off Rate',
+            data: [2.53, 0.78], // Data values for Series 1
             backgroundColor: ColorE, // Color for Series 1
         },
         {
-            label: '$ Volume Loans',
-            data: [15, 33], // Data values for Series 2
+            label: '% Dollar Charge-Off Rate',
+            data: [2.55, 0.79], // Data values for Series 2
             backgroundColor: ColorC, // Color for Series 2
         },
     ],
@@ -720,11 +720,11 @@ const item18 = new Chart(ctx18, {
 
 
 const data19 = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    labels: ['37', '36', '35', '34', '33', '32', '31', '30', '29', '28', '27', '26', '25', '24', '23', '22', '21', '20', '19', '18', '17', '16', '15', '14', '13', '12', '11', '10', '9', '8', '7', '6', '5', '4', '3', '2', '1', '0'],
     datasets: [
         {
-            label: '# Unit',
-            data: [10, 25, 18, 35, 30, 45, 10, 27, 18, 35, 10, 25], // Data values for Series 1
+            label: '% Unit Charge-Off Rate',
+            data: [2.50, 2.33, 3.13, 0.00, 0.78, 0.00, 1.14, 2.81, 1.73, 0.36, 0.88, 1.69, 1.28, 1.63, 1.11, 1.11, 1.47, 0.81, 0.87, 0.39, 0.67, 0.85, 1.41, 1.01, 1.06, 1.22, 1.27, 0.97, 1.07, 0.92, 0.81, 1.14, 1.13, 1.08, 1.36, 1.32, 1.39, 1.31], // Data values for Series 1
             fill: false, // Fill the area under the line
             backgroundColor: `rgba(${hexToRgb(ColorE).r}, ${hexToRgb(ColorE).g}, ${hexToRgb(ColorE).b}, 0.6)`, // Fill color
             borderColor: ColorE, // Line color
@@ -732,8 +732,8 @@ const data19 = {
             cubicInterpolationMode: 'monotone', // Smooth curve
         },
         {
-            label: '$ Dollar',
-            data: [25, 10, 30, 35, 25, 55, 25, 10, 20, 35, 25, 35], // Data values for Series 1
+            label: '% Dollar Charge-Off Rate',
+            data: [0.99, 0.64, 2.23, 0.00, 0.20, 0.00, 1.32, 3.81, 1.72, 0.23, 0.61, 2.39, 1.94, 1.75, 1.29, 0.98, 1.32, 0.78, 0.82, 0.36, 0.57, 0.89, 1.61, 0.90, 0.94, 1.07, 1.40, 0.93, 1.04, 0.77, 0.84, 1.11, 1.01, 1.00, 1.27, 1.25, 1.46, 1.26], // Data values for Series 1
             fill: false, // Fill the area under the line
             backgroundColor: `rgba(${hexToRgb(ColorC).r}, ${hexToRgb(ColorC).g}, ${hexToRgb(ColorC).b}, 0.6)`, // Fill color
             borderColor: ColorC, // Line color
