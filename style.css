@@ -207,6 +207,10 @@ hr {
 .project21:nth-child(1) .projectcard {
   background-image: url("assets/foot2.png");
 }
+
+.project21:nth-child(2) .projectcard {
+  background-image: url("assets/eco2.png");
+}
 .projectcard1 {
   padding-left: 8%;
   padding-right: 4%;
