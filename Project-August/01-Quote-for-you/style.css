@@ -45,3 +45,9 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.loading {
+            display: none;
+            font-size: 18px;
+            color: var(--ColorText);
+        }

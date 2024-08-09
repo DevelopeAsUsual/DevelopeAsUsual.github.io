@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="centered-text">
-        <h1>Building a new project daily for next 24 days! Let's begin the journey.</h1>
+        <h3>Random Quote Generator</h3>
+        <h2 id="quote">Click the button to get a quote</h2>
+        <button onclick="getQuote()">Get a New Quote</button>
+        <p id="loading" class="loading">Loading...</p>
     </div>
+
 
     <script>
         async function getQuote() {
+            // Show loading message
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('quote').style.display = 'none';
+
             try {
                 const response = await fetch('https://developeasusual-github-io.onrender.com/random-quote');
                 const data = await response.json();
@@ -20,6 +29,10 @@
             } catch (error) {
                 document.getElementById('quote').innerText = "Could not fetch quote. Please try again.";
             }
+
+            // Hide loading message and show quote
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('quote').style.display = 'block';
         }
     </script>
 </body>
