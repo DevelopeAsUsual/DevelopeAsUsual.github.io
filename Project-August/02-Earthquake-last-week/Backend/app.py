@@ -20,10 +20,10 @@ def get_earthquakes():
 
 
     # Calculate min/max latitude and longitude by subtracting/adding 1 degree
-    min_latitude = latitude - 2
-    max_latitude = latitude + 2
-    min_longitude = longitude - 2
-    max_longitude = longitude + 2
+    min_latitude = latitude - 5
+    max_latitude = latitude + 5
+    min_longitude = longitude - 5
+    max_longitude = longitude + 5
 
     # Define the API endpoint and parameters
     url = "https://earthquake.usgs.gov/fdsnws/event/1/query"
