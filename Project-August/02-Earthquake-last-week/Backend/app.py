@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import requests
+from datetime import datetime, timezone, timedelta
 
 app = Flask(__name__)
 CORS(app)
@@ -11,6 +12,12 @@ def get_earthquakes():
     min_magnitude = float(request.args.get('min_magnitude'))
     latitude = float(request.args.get('latitude'))
     longitude = float(request.args.get('longitude'))
+
+    end_time = datetime.now(tz=timezone.utc).date()
+    start_time = end_time - timedelta(days=365)
+    start_date_str = start_time.isoformat()
+    end_date_str = end_time.isoformat()
+
 
     # Calculate min/max latitude and longitude by subtracting/adding 1 degree
     min_latitude = latitude - 1
@@ -23,8 +30,8 @@ def get_earthquakes():
     
     params = {
         "format": "geojson",  # The format of the data
-        "starttime": "2024-01-01",  # Start date (can be adjusted)
-        "endtime": "2024-08-01",  # End date (can be adjusted)
+        "starttime": start_date_str,
+        "endtime": end_date_str,  # End date (can be adjusted)
         "minmagnitude": min_magnitude,  # Minimum magnitude of earthquakes
         "minlatitude": min_latitude,  # South latitude (bottom of the box)
         "maxlatitude": max_latitude,  # North latitude (top of the box)
