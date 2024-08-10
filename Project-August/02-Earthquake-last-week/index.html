@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthquake Finder</title>
+</head>
+<body>
+    <h1>Find Earthquakes</h1>
+    <form id="earthquakeForm">
+        <label for="min_latitude">Min Latitude:</label>
+        <input type="number" id="min_latitude" name="min_latitude" step="any" required><br>
+
+        <label for="max_latitude">Max Latitude:</label>
+        <input type="number" id="max_latitude" name="max_latitude" step="any" required><br>
+
+        <label for="min_longitude">Min Longitude:</label>
+        <input type="number" id="min_longitude" name="min_longitude" step="any" required><br>
+
+        <label for="max_longitude">Max Longitude:</label>
+        <input type="number" id="max_longitude" name="max_longitude" step="any" required><br>
+
+        <label for="min_magnitude">Min Magnitude:</label>
+        <input type="number" id="min_magnitude" name="min_magnitude" step="any" required><br><br>
+
+        <button type="submit">Get Earthquakes</button>
+    </form>
+
+    <h2>Earthquake Results</h2>
+    <ul id="results"></ul>
+
+    <script>
+        document.getElementById('earthquakeForm').onsubmit = function(event) {
+            event.preventDefault();
+
+            // Get form values
+            const min_latitude = document.getElementById('min_latitude').value;
+            const max_latitude = document.getElementById('max_latitude').value;
+            const min_longitude = document.getElementById('min_longitude').value;
+            const max_longitude = document.getElementById('max_longitude').value;
+            const min_magnitude = document.getElementById('min_magnitude').value;
+
+            // Fetch data from the Flask API
+            fetch(`/get-earthquakes?min_latitude=${min_latitude}&max_latitude=${max_latitude}&min_longitude=${min_longitude}&max_longitude=${max_longitude}&min_magnitude=${min_magnitude}`)
+                .then(response => response.json())
+                .then(data => {
+                    const results = document.getElementById('results');
+                    results.innerHTML = '';
+                    data.forEach(earthquake => {
+                        const li = document.createElement('li');
+                        li.textContent = `Magnitude: ${earthquake.magnitude}, Location: ${earthquake.location}, Time: ${new Date(earthquake.time).toLocaleString()}, Coordinates: (${earthquake.latitude}, ${earthquake.longitude})`;
+                        results.appendChild(li);
+                    });
+                })
+                .catch(error => console.error('Error:', error));
+        };
+    </script>
+</body>
+</html>
