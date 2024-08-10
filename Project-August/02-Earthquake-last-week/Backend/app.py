@@ -20,10 +20,10 @@ def get_earthquakes():
 
 
     # Calculate min/max latitude and longitude by subtracting/adding 1 degree
-    min_latitude = latitude - 1
-    max_latitude = latitude + 1
-    min_longitude = longitude - 1
-    max_longitude = longitude + 1
+    min_latitude = latitude - 5
+    max_latitude = latitude + 5
+    min_longitude = longitude - 5
+    max_longitude = longitude + 5
 
     # Define the API endpoint and parameters
     url = "https://earthquake.usgs.gov/fdsnws/event/1/query"
@@ -31,7 +31,7 @@ def get_earthquakes():
     params = {
         "format": "geojson",  # The format of the data
         "starttime": start_date_str,
-        "endtime": end_date_str,  # End date (can be adjusted)
+        "endtime": end_date_str,
         "minmagnitude": min_magnitude,  # Minimum magnitude of earthquakes
         "minlatitude": min_latitude,  # South latitude (bottom of the box)
         "maxlatitude": max_latitude,  # North latitude (top of the box)
