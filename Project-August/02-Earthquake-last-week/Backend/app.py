@@ -8,11 +8,15 @@ CORS(app)
 @app.route('/get-earthquakes', methods=['GET'])
 def get_earthquakes():
     # Get parameters from the request
-    min_latitude = request.args.get('min_latitude')
-    max_latitude = request.args.get('max_latitude')
-    min_longitude = request.args.get('min_longitude')
-    max_longitude = request.args.get('max_longitude')
-    min_magnitude = request.args.get('min_magnitude')
+    min_magnitude = float(request.args.get('min_magnitude'))
+    latitude = float(request.args.get('latitude'))
+    longitude = float(request.args.get('longitude'))
+
+    # Calculate min/max latitude and longitude by subtracting/adding 1 degree
+    min_latitude = latitude - 1
+    max_latitude = latitude + 1
+    min_longitude = longitude - 1
+    max_longitude = longitude + 1
 
     # Define the API endpoint and parameters
     url = "https://earthquake.usgs.gov/fdsnws/event/1/query"
