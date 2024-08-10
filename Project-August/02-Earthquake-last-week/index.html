@@ -40,8 +40,10 @@
             const max_longitude = document.getElementById('max_longitude').value;
             const min_magnitude = document.getElementById('min_magnitude').value;
 
+            const apiUrl = `https://developeasusual-github-io-1.onrender.com/get-earthquakes?min_latitude=${min_latitude}&max_latitude=${max_latitude}&min_longitude=${min_longitude}&max_longitude=${max_longitude}&min_magnitude=${min_magnitude}`;
+
             // Fetch data from the Flask API
-            fetch(`/get-earthquakes?min_latitude=${min_latitude}&max_latitude=${max_latitude}&min_longitude=${min_longitude}&max_longitude=${max_longitude}&min_magnitude=${min_magnitude}`)
+            fetch(apiUrl)
                 .then(response => response.json())
                 .then(data => {
                     const results = document.getElementById('results');
