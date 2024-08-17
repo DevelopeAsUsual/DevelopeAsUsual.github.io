@@ -21594,9 +21594,10 @@ def digit_recognition():
 
         test_image = np.array(matrix)  # Select the first image from the test set
         predicted_class = evaluate_image(test_image, np.array(b_W1), np.array(b_b1), np.array(b_W2), np.array(b_b2))
+        predicted_int = int(predicted_class)
 
         # Return the sum as a JSON response
-        return jsonify({"Predicted Digit is ": predicted_class})
+        return jsonify({"Predicted Digit is ": predicted_int})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
