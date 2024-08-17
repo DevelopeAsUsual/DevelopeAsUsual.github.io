@@ -1,2 +1,4 @@
 Flask==3.0.3
 numpy==2.0.1
+Flask-CORS==4.0.1
+gunicorn==21.0.1

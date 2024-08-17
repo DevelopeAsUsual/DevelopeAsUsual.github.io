@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import numpy as np
 
 
@@ -21583,6 +21584,7 @@ b_b2 = [ 0.02226612, -0.20517042, -0.1971678 , -0.40637404,  0.25859553,
 
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/digit_recognition', methods=['POST'])
 def digit_recognition():
