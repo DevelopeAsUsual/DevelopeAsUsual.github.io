@@ -33,7 +33,7 @@ h1 {
 
 .card-link {
     text-decoration: none; /* Remove underline from the link */
-    margin: 10;
+    margin: 15px;
 }
 
 .card {
