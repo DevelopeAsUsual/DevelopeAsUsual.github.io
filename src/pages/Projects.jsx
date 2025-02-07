@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Project1 from "/1.png"
 import Project2 from "/2.png"
-import Project2_1 from "/dist/about.jpg"
 import Project3 from "/3.png"
 import Sleeping from "../components/Sleeping";
 import Standing from "../components/Standing";
