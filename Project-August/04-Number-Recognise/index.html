@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Drawing Board</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        canvas {
+            border: 20px solid  #2A1E1E;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> Draw a digit (0-9) and predict the number
+    </h1>
+    <canvas id="drawingBoard" width="280" height="280"></canvas>
+    <br>
+    <button onclick="savematrix_canvas()">Predict value</button>
+    <button onclick="clearCanvas()">Clear canvas</button>
+
+    <script>
+        const canvas = document.getElementById('drawingBoard');
+        const ctx = canvas.getContext('2d');
+        const scale = 10; // Each pixel is 10x10 on screen
+        const matrix_canvasSize = 28;
+        let isDrawing = false;
+        let matrix_canvas = Array(matrix_canvasSize).fill().map(() => Array(matrix_canvasSize).fill(0));
+
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mouseout', stopDrawing);
+
+        function startDrawing(e) {
+            isDrawing = true;
+            draw(e);
+        }
+
+        function stopDrawing() {
+            isDrawing = false;
+        }
+
+        function draw(e) {
+            if (!isDrawing) return;
+
+            const rect = canvas.getBoundingClientRect();
+            const centerX = Math.floor((e.clientX - rect.left) / scale);
+            const centerY = Math.floor((e.clientY - rect.top) / scale);
+
+            const penRadius = 2; // Adjust this for larger or smaller pen size
+            const maxIntensityPerStroke = 100; // Maximum intensity added per stroke
+
+            for (let y = centerY - penRadius; y <= centerY + penRadius; y++) {
+                for (let x = centerX - penRadius; x <= centerX + penRadius; x++) {
+                    if (x >= 0 && x < matrix_canvasSize && y >= 0 && y < matrix_canvasSize) {
+                        const distance = Math.sqrt((x - centerX) ** 2 + (y - centerY) ** 2);
+                        if (distance <= penRadius) {
+                            const intensityToAdd = Math.max(0, maxIntensityPerStroke - Math.floor(maxIntensityPerStroke * (distance / penRadius)));
+                            matrix_canvas[y][x] = Math.min(255, matrix_canvas[y][x] + intensityToAdd);
+                            
+                            const grayValue = 255 - matrix_canvas[y][x];
+                            ctx.fillStyle = `rgb(${grayValue}, ${grayValue}, ${grayValue})`;
+                            ctx.fillRect(x * scale, y * scale, scale, scale);
+                        }
+                    }
+                }
+            }
+        }
+
+        function clearCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            matrix_canvas = Array(matrix_canvasSize).fill().map(() => Array(matrix_canvasSize).fill(0));
+        }
+
+		
+	async function savematrix_canvas() {
+            
+            // Construct a 28x28 matrix_canvas for demonstration
+	    const loader = document.getElementById('loader');
+            loader.style.display = 'block';
+	    const matrix = matrix_canvas;
+	    console.log(matrix);
+            
+                
+            try {
+                const response = await fetch('https://developeasusual-github-io-2.onrender.com/digit_recognition', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ matrix })
+                });
+
+                const data = await response.json();
+                
+                if (response.ok) {
+                    document.getElementById('result').textContent = `Predicted Digit is: ${data["Predicted Digit is "]}`;
+                } else {
+                    document.getElementById('result').textContent = `Error: ${data.error}`;
+                }
+            } catch (error) {
+                document.getElementById('result').textContent = `Error: ${error.message}`;
+            }
+	    loader.style.display = 'none';
+        }
+    </script>
+<div id="loader">
+        <span class="spinner"></span>
+        <span>Predicting Value...</span>
+    </div>
+<h2><p id="result"></p></h2>
+</body>
+</html>

@@ -1,0 +1,23 @@
+Done - **Hello World Webpage**: Create a simple HTML page with a "Hello World" message using Flask.
+Done - **Random Quote Generator**: Display a random quote from a predefined list on a webpage.
+Done - **Earthquake Finder**: Create a tool that gets earthquake in last year near a given location.
+Done - **Number recognition app**: Create a digit recognition webapp using tennsoflow.
+**Simple API**: Create a RESTful API with Flask that returns data in JSON format.
+**Basic SQL Queries**: Create a webpage to display data from a simple SQLite database.
+**Expense Tracker**: Track daily expenses and display them using Flask and SQL.
+**Weather Dashboard**: Combine web scraping and API data to display weather information.
+**Feedback Form**: Create a feedback form and store responses in an SQL database.
+**BMI Calculator**: Create a BMI calculator that takes user input and displays results.
+**GitHub Profile Viewer**: Fetch and display GitHub profile data using GitHub API.
+**Data Visualization**: Create a bar chart from a CSV file using matplotlib and display it on a webpage.
+**Email Sender**: Create a script to send emails using Python.
+**Tic-Tac-Toe**: Create a web-based tic-tac-toe game.
+**Hangman Game**: Develop a web-based hangman game.
+**Palindrome Checker**: Create a web app that checks if a given string is a palindrome.
+**Anagram Finder**: Build a tool to check if two strings are anagrams.
+**CSV Reader**: Read a CSV file and display its contents on a webpage.
+**Online Poll**: Build an online polling system using SQL and Flask.
+**Pie Chart Generator**: Generate a pie chart from given data.
+**Typing Speed Test**: Develop a typing speed test application.
+. **GitHub Repository Stats**: Display statistics for a GitHub repository.
+**Choice maker**: Build a URL shortener service using Flask and SQL.
