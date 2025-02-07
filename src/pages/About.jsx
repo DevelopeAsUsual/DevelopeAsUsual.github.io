@@ -1,5 +1,5 @@
 import React from 'react'
-import about from '/dist/about.jpg'
+import about from '/about.jpg'
 
 const About = () => {
   return (
