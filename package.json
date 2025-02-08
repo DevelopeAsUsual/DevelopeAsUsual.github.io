@@ -8,15 +8,11 @@
     "test": "echo \"No tests specified\" && exit 1",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://developeasusual.github.io/developeasusual/",
-
-
-
+  "homepage": "https://developeasusual.github.io/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
