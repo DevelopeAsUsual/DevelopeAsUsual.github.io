@@ -5,5 +5,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   base: "/developeasusual.github.io",
-  plugins: [react()]
+  plugins: [react()],
+  resolve: {
+    extensions: ['.js', '.jsx']
+  }
 })
