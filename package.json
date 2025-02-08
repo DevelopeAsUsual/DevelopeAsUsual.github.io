@@ -12,7 +12,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -b main -d dist"
   },
-  "homepage": "https://DevelopeAsUsual.github.io",
+  "homepage": "https://DevelopeAsUsual.github.io/DevelopeAsUsual.github.io",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
