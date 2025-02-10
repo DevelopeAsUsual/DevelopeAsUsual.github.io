@@ -41,3 +41,16 @@ fetch('src/Contact.html')
 })
 .catch(error => console.error('Error loading the div:', error));
 
+
+tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          'montserrat': ['Montserrat', 'sans-serif'],
+          // 'arsenica': ['Arsenica Bold', 'sans-serif'],
+          'arsenica': ['Arsenica', 'sans-serif'],
+        }
+      }
+    }
+  };
+

@@ -12,7 +12,7 @@
     <title>Kartik Chhimpa</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="script_divcall.js"></script>
+    <script defer src="script.js"></script>
     <script src="Sleeping.js" defer></script>
 
     <style>
@@ -22,35 +22,32 @@
           background-color: black;
           transition: width 2s ease-in-out;
       }
+
+      @font-face {
+        font-family: 'Arsenica';
+        src: url('/fonts/ArsenicaTrial-Bold.ttf') format('truetype');
+        font-weight: bold;
+      }
     </style>
   </head>
-  <body>
+  <body class="bg-[#fdfbf5]">
     <div id="root"></div>
+    <div class = 'fixed p-2.5 bg-[#fdfbf5] w-full z-[9999]'></div>
+    <div class = 'fixed top-0 left-0 p-2 md:p-5 w-full z-[9999]' >
+      <div id="Navbar" class = 'p-5 border border-solid border-black w-full  bg-[#fdfbf5] shadow-md'></div>
+    </div>
+    
     <div class='flex justify-between items-center'>
-      <div class='m-2 md:m-5 p-5 border border-solid border-black w-[98vw]' >
-        <div id="Navbar"></div>
-        <div class="min-h-[1px] w-full"><div class="line w-0"></div></div>
+      <div class='m-2 md:m-5 p-5 border border-solid border-black w-[98%]' >
         
         <div id="About"></div>
-        <div class="min-h-[1px] w-full"><div class="line w-0"></div></div>
-
-        
-
         <div id="Work"></div>
-        <div class="min-h-[1px] w-full"><div class="line w-0"></div></div>
-
         <div id="Project"></div>
-        <div class="min-h-[1px] w-full"><div class="line w-0"></div></div>
-
         <div id="Education"></div>
-        <div class="min-h-[1px] w-full"><div class="line w-0"></div></div>
-
         <div id="Contact"></div>
-
-  
-      
       </div>
     </div>
-    <!-- <script type="module" src="/src/main.jsx"></script> -->
+
+
   </body>
 </html>
