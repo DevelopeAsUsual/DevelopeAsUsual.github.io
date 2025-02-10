@@ -3,18 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kartik Chhimpa</title>
 
+    <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="script_divcall.js"></script>
+    <script src="Sleeping.js" defer></script>
+
+    <style>
+      .line {
+          width: 100%;
+          height: 0.5px;
+          background-color: black;
+          transition: width 2s ease-in-out;
+      }
+  </style>
   </head>
   <body>
     <div id="root"></div>
-    Portfolio Start
-    <div id="box-container"></div>
+    <div class='flex justify-between items-center'>
+      <div class='m-2 md:m-5 p-5 border border-solid border-black w-[98vw]' >
+        <div id="Navbar"></div>
+        <div class="min-h-[1px] w-full"><div class="line w-0"></div></div>
+        
+        <div id="About"></div>
+        <div class="min-h-[1px] w-full"><div class="line w-0"></div></div>
+
+        
+
+        <div id="Work"></div>
+        <div class="min-h-[1px] w-full"><div class="line w-0"></div></div>
+
+        <div id="Project"></div>
+        <div class="min-h-[1px] w-full"><div class="line w-0"></div></div>
+
+        <div id="Education"></div>
+        <div class="min-h-[1px] w-full"><div class="line w-0"></div></div>
+
+        <div id="Contact"></div>
+
+  
+      
+      </div>
+    </div>
     <!-- <script type="module" src="/src/main.jsx"></script> -->
   </body>
 </html>
