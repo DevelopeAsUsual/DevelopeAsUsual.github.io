@@ -1,0 +1,62 @@
+:root {
+    --ColorA: #ec8a6f;
+    --ColorB: #12538d;
+    --ColorC: #60D2B6;
+    --ColorD: #aaaaaa;
+    --ColorE: #FFCE5C;
+    --ColorBackground: #171111;
+    --ColorW: #ffffff;
+    --ColorText: #FFE4E4;
+    --ColorF: #666666;
+    
+}
+
+body {
+    margin-top: 10;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--ColorBackground);
+    font-family: 'Arial', sans-serif;
+}
+
+.centered-text {
+    text-align: center;
+    color: var(--ColorText);
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.card-link {
+    text-decoration: none; /* Remove underline from the link */
+    margin: 15px;
+}
+
+.card {
+    width: 90vw;
+    border: 3px solid var(--ColorText);
+    border-radius: 40px;
+    background-color: var(--ColorBackground);
+    text-align: center;
+    padding: 10px;
+    color: var(--ColorText);
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.card:hover {
+    color: var(--ColorBackground);
+    background-color: var(--ColorText);
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.card p {
+    font-size: 16px;
+    margin: 10px 0;
+}

@@ -1,0 +1,53 @@
+:root {
+    --ColorA: #ec8a6f;
+    --ColorB: #12538d;
+    --ColorC: #60D2B6;
+    --ColorD: #aaaaaa;
+    --ColorE: #FFCE5C;
+    --ColorBackground: #171111;
+    --ColorW: #ffffff;
+    --ColorText: #FFE4E4;
+    --ColorF: #666666;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ColorBackground);
+    font-family: 'Arial', sans-serif;
+}
+
+.centered-text {
+    text-align: center;
+    color: var(--ColorText);
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--ColorText);
+    color: var(--ColorBackground);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loading {
+            display: none;
+            font-size: 18px;
+            color: var(--ColorText);
+        }
